@@ -8,7 +8,7 @@ import (
 var a App
 func TestMain(m *testing.M) {
 	a = App{}
-	a.Initialize("DB_USERNAME", "DB_PASSWORD", "rest_api_example")
+	a.Initialize("mysql", "9207818963a3a5c1", "ileave")
 	ensureTableExists()
 	code := m.Run()
 	clearTable()
