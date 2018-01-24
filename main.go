@@ -1,9 +1,22 @@
-package ileave_server
+package main
+
+import (
+	. "./utils/constants"
+	. "./app"
+)
 
 func main() {
+
 	a := App{}
 	// You need to set your Username and Password here
-	a.Initialize("DB_USERNAME", "DB_PASSWORD", "rest_api_example")
+	a.Initialize(DB_USER, DB_PASS, DB_NAME)
 
-	a.Run(":8080")
+	a.Run(API_HOST + ":" + API_PORT)
 }
+
+
+
+
+
+
+

@@ -8,3 +8,5 @@ type Content struct {
 	Url   string    `json:"url"`
 	Name   string    `json:"name"`
 }
+
+type Contents []Content
